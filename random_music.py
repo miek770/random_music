@@ -9,7 +9,7 @@ from typing import List, Tuple, Union
 
 def load_config(config_file: str = "config.yaml") -> Tuple[str, str, List[str], int]:
     """Load configuration from YAML file."""
-    with open(config_file, "r") as file:
+    with open(config_file, "r", encoding="utf-8") as file:
         config = yaml.safe_load(file)
 
     source_dir: str = config.get("source_directory", "")
