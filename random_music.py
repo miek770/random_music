@@ -74,9 +74,15 @@ def copy_music_files(
         artist_dir: Path = usb_path / artist
         artist_dir.mkdir(parents=True, exist_ok=True)
 
-        # Copy the file to the artist directory
+        # Attempt to copy the file to the artist directory
         dest_file: Path = artist_dir / song_title
-        shutil.copy2(file, dest_file)
+
+        try:
+            shutil.copy2(file, dest_file)
+        except:
+            print(f"Failed to copy {file} to {dest_file}, exiting.")
+            break
+
         total_size += file_size
         print(f"Copied {file} to {dest_file}")
 
