@@ -1,0 +1,24 @@
+source_directory: P:\\Music
+
+destination_directory: E:\\
+
+exclude_directories:
+  - 'Adele'
+  - 'Au Revoir Simone'
+  - 'Band of Horses'
+  - 'Bedouin Soundclash'
+  - 'Beirut'
+  - 'Bénabar'
+  - 'Bob Dylan'
+  - 'Bob Marley & The Wailers'
+  - 'Bob Sinclair'
+  - 'Charles Dutoit_ Montreal Symphony Orchestra'
+  - 'Dumas'
+  - 'Edith Piaf'
+  - 'François Pérusse'
+  - 'Fryderyk Chopin'
+  - 'Jack Johnson'
+  - 'Nina Simone'
+  - 'Non-Album'
+  - 'Norah Jones'
+  - 'The Most Relaxing Classical Album'
