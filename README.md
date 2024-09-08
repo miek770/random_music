@@ -39,18 +39,20 @@ poetry install
 
 ## Configuration
 
-Create a `config.yaml` file in the project directory with the following structure:
+Modify or copy the `config.yaml` file in the project directory to match your requirements:
 
 ```yaml
-source_directory: /path/to/music
-destination_directory: /path/to/usb
+source_directory: M:\
+destination_directory: E:\
+destination_space_gb: 4
 exclude_directories:
-  - 'ArtistName1'
-  - 'ArtistName2'
+  - "Artist Name 1"
+  - "Artist Name 2"
 ```
 
 - `source_directory`: The path to the directory containing your music files.
 - `destination_directory`: The path to the USB drive or target directory where music files will be copied.
+- `destination_space_gb`: The free space in GB of the target directory.
 - `exclude_directories`: List of subdirectories (artists, genres) to exclude from the selection.
 
 ## Usage
@@ -64,7 +66,7 @@ poetry shell
 Run the script using Poetry:
 
 ```bash
-poetry run python random_music.py
+poetry run python random_music.py --config config.yaml
 ```
 
 ## License
