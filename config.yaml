@@ -1,6 +1,7 @@
 source_directory: P:\\Music
 
 destination_directory: E:\\
+destination_space_gb: 29.7
 
 exclude_directories:
   - 'Adele'
