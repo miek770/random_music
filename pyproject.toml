@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "random-music"
-version = "0.1.0"
+version = "0.2.0"
 description = "Fill up a directory (e.g.: a USB key) with random songs from a source directory."
 authors = ["Michel Lavoie <lavoie.michel@gmail.com>"]
 license = "MIT"
@@ -8,10 +8,14 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.9,<4.0"
 rich-click = "^1.8.3"
 mutagen = "^1.47.0"
 PyYAML = "^6.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.8.0"
+black = "^24.8.0"
 
 [build-system]
 requires = ["poetry-core"]
