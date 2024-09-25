@@ -2,6 +2,8 @@
 
 A Python script to randomly copy music files from a source directory to a destination (e.g.: USB drive), excluding certain directories, and organize them by artist.
 
+It's also an excuse to try out `poetry`.
+
 ## Features
 
 - Randomly selects music files from a source directory.
